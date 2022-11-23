@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AMIMobile.SettingAccessPage"
+    Title="บันทึกการเข้าใช้งาน"
+    NavigationPage.BackButtonTitle="">
+    <ContentPage.Content>
+        <Grid RowDefinitions="Auto,Auto,Auto,*" ColumnDefinitions="Auto,Auto,Auto">
+            <ContentView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Padding="10">
+                    <Label Text="วันที่และเวลาเข้าใช้งานครั้งล่าสุด" Style="{StaticResource styLabel_Body}" TextColor="#74065F" HorizontalOptions="Start"/>
+
+
+            </ContentView>
+        <ContentView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" Padding="10">
+           <StackLayout >
+                    <!--<Label Text="วันที่และเวลาเข้าใช้งานครั้งล่าสุด" Style="{StaticResource styLabel_Body}" TextColor="#74065F" HorizontalOptions="Start"/>-->
+                     
+                <Frame Background="#FFF" CornerRadius="10" HeightRequest="15" HasShadow="False">
+                    <Label  Text="01/10/2565 10.00 น." Style="{StaticResource styLabel_Small}" TextColor="#320941" HorizontalOptions="Start"/>
+                </Frame>
+
+               </StackLayout>
+               </ContentView>
+         
+
+     </Grid>
+        <!--<StackLayout Padding="10"  >
+            <Frame  BorderColor="#74065F" CornerRadius="10" HasShadow="False" Padding="0">
+                <Grid RowDefinitions="Auto,Auto,Auto,Auto" ColumnDefinitions="2.5*,2.5*,2.5*,2.5*" RowSpacing="0">
+                    <Label Grid.Row="0" Grid.Column="0"  Text="วันที่และเวลา" Style="{StaticResource styLabel_Small}" TextColor="#320941" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" />
+                    <Label Grid.Row="0" Grid.Column="1"   Text="ชื่ออุปกรณ์" Style="{StaticResource styLabel_Small}" TextColor="#320941" VerticalOptions="Center" HorizontalOptions="CenterAndExpand"/>
+                    <Label Grid.Row="0" Grid.Column="2"  Text="Platform" Style="{StaticResource styLabel_Small}" TextColor="#320941" VerticalOptions="Center" HorizontalOptions="CenterAndExpand"/>
+                    <Label Grid.Row="0" Grid.Column="3" Text="สถานะการใช้งาน"  Style="{StaticResource styLabel_Small}" TextColor="#320941" VerticalOptions="Center" HorizontalOptions="CenterAndExpand"/>
+                    <BoxView Background="#707070" WidthRequest="1" Grid.Column="0" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+                    <BoxView Background="#707070" WidthRequest="1" Grid.Column="1" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+                    <BoxView Background="#707070" WidthRequest="1" Grid.Column="2" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+
+                </Grid>
+            </Frame>
+            <Frame BorderColor="#74065F"  HasShadow="False" Padding="0" HeightRequest="170"  >
+            <ListView  Background="Transparent" x:Name="List_Data" SelectionMode="None" SeparatorVisibility="None" HasUnevenRows="True" >
+               
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                                <Grid RowDefinitions="Auto,Auto,Auto,Auto" ColumnDefinitions="2.5*,2.5*,2.5*,2.5*" RowSpacing="0">
+                                    <Label Grid.Row="0" Grid.Column="0" x:Name="logDate" Text="{Binding fact}" Style="{StaticResource styLabel_Small}" TextColor="#320941" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                    <Label Grid.Row="0" Grid.Column="1" x:Name="deviceName" Text="{Binding length}"  Style="{StaticResource styLabel_Small}" TextColor="#320941" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                    <Label Grid.Row="0" Grid.Column="2" x:Name="platform" Text="{Binding name}"  Style="{StaticResource styLabel_Small}" TextColor="#320941" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                    <Label Grid.Row="0" Grid.Column="3" x:Name="status" Text="{Binding status}"  Style="{StaticResource styLabel_Small}" TextColor="#320941" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                    <BoxView Background="#707070" WidthRequest="1" Grid.Column="0" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+                                    <BoxView Background="#707070" WidthRequest="1" Grid.Column="1" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+                                    <BoxView Background="#707070" WidthRequest="1" Grid.Column="2" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+                                </Grid>
+                        </ViewCell>
+
+                    </DataTemplate>
+
+                </ListView.ItemTemplate>
+
+            </ListView>
+                 </Frame>
+        </StackLayout>-->
+          
+    </ContentPage.Content>
+</ContentPage>
+

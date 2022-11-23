@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AMIMobile.LoadDetailPage"
+    NavigationPage.BackButtonTitle=""
+    Title="โหลดโปรไฟล์"
+   >
+    <NavigationPage.TitleView>
+        <StackLayout Padding="0" >
+            <StackLayout Padding="100,0,0,0" >
+                <Image Source="img/img_b01.png"  WidthRequest="70" VerticalOptions="Start" HorizontalOptions="End" />
+            </StackLayout>
+            <StackLayout Padding="0,0,0,0">
+                <Image  Source="img/img_b02.png" WidthRequest="100" VerticalOptions="End" HorizontalOptions="Start" />
+
+
+            </StackLayout>
+        </StackLayout>
+
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <Grid RowDefinitions="10,Auto,*,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,*,Auto">
+            <ContentView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Padding="10" >
+                <Frame Background="#FFF" CornerRadius="19" >
+                    <Grid RowDefinitions="Auto,Auto" ColumnDefinitions="*,Auto,*,Auto,*,Auto" RowSpacing="0">
+
+                        <!--<Label Grid.Row="0" Grid.Column="2"  Text="2345678" Style="{StaticResource styLabel_Body}" TextColor="#320941"/>
+                         <Label Grid.Row="1" Grid.Column="1"  Text="Tariff" Style="{StaticResource styLabel_Medium}" TextColor="#320941"/>
+                        <Label Grid.Row="2" Grid.Column="1"  HorizontalOptions="Center" Text="Tou" Style="{StaticResource styLabel_Body}" TextColor="#320941" />
+                        <BoxView Grid.Row="1" Grid.Column="1" Grid.RowSpan="2" VerticalOptions="Center" HorizontalOptions="End" HeightRequest="30" WidthRequest="1" Color="#320941"/>-->
+
+                        <StackLayout Orientation="Horizontal" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4">
+                            <Label   Text="หมายเลขมิเตอร์:" Style="{StaticResource styLabel_Medium}"  TextColor="#320941"/>
+                            <Label   Text="2345678" Style="{StaticResource styLabel_Body}" TextColor="#320941"/>
+                            <!--<Label   Text="{translator:Translate หมายเลขมิเตอร์:}" Style="{StaticResource styLabel_Medium}" HorizontalOptions="Start" TextColor="#320941"/>-->
+                        </StackLayout>
+                        <StackLayout Orientation="Vertical" Grid.Row="2" Grid.Column="0" >
+                            <Label Text="Tariff" Style="{StaticResource styLabel_Medium}" TextColor="#320941" HorizontalOptions="Center" />
+                            <Label  Text="Tou" Style="{StaticResource styLabel_Body}" TextColor="#320941" HorizontalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Grid.Row="2" Grid.Column="1" >
+                            <BoxView  HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="60" WidthRequest="1" Color="#74065F"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="2" Grid.Column="2" Orientation="Vertical"   >
+                            <Label Text="CT Ratio" Style="{StaticResource styLabel_Medium}" TextColor="#320941" HorizontalOptions="Center" />
+                            <Label HorizontalOptions="Center" Text="250:5 A" Style="{StaticResource styLabel_Body}" TextColor="#320941"  />
+                        </StackLayout>
+                        <StackLayout Grid.Row="2" Grid.Column="3">
+                            <BoxView   HorizontalOptions="Center" VerticalOptions="Center"  HeightRequest="60" WidthRequest="1" Color="#74065F"/>
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="2" Grid.Column="4" Orientation="Vertical" >
+                            <Label Text="VT Ratio" Style="{StaticResource styLabel_Medium}" TextColor="#320941" HorizontalOptions="Center"/>
+                            <Label  Text="1:1 V." Style="{StaticResource styLabel_Body}" TextColor="#320941" HorizontalOptions="Center" />
+                        </StackLayout>
+                    </Grid>
+                </Frame>
+            </ContentView>
+            <ContentView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="4">
+                <BoxView  Background="#E7D2EF"  CornerRadius="40,40,0,0" />
+
+            </ContentView>
+            <ContentView Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="4" VerticalOptions="Center" Padding="0,10,10,0" >
+
+                <Label Text="รายงานข้อมูลกิโลวัตต์รายเดือน" Style="{StaticResource styLabel_Body}" HorizontalOptions="Center" />
+                <!--<StackLayout VerticalOptions="Center">
+                     <BoxView Background="#000"  />
+
+                </StackLayout>-->
+
+            </ContentView>
+            <ContentView Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="4" >
+                <StackLayout Padding="5,0,20,0">
+                    <CarouselView x:Name="Collection_LoadProfile" HorizontalScrollBarVisibility="Never" HorizontalOptions="Center" IndicatorView="indicatorView" Loop="False"  >
+                        <!--<CarouselView .ItemsLayout>
+                        <LinearItemsLayout Orientation="Horizontal" ItemSpacing="15"/>
+
+                    </CarouselView>-->
+                        <CarouselView.ItemsLayout>
+                            <LinearItemsLayout Orientation="Horizontal" ItemSpacing="20"  />
+
+                        </CarouselView.ItemsLayout>
+                        <CarouselView.ItemTemplate  >
+                            <DataTemplate >
+
+                                <!--<Image Source="{Binding LoadProfile}"  Aspect="Fill" />-->
+                                <StackLayout HorizontalOptions="Fill" >
+                                    <Frame  BorderColor="#74065F" CornerRadius="10" HasShadow="False" Padding="0" HeightRequest="400" >
+                                        <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal">
+                                           
+
+                                        
+                                        <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="*,*,*,*,*,*,*,Auto" >
+                                        
+                                                
+                                                        <Label Grid.Row="0" Grid.Column="0" Grid.RowSpan="2"  Text="วันที่"  Style="{StaticResource styLabel_Small}" TextColor="#320941" VerticalOptions="Center" HorizontalOptions="Center" />
+                                                
+                                                <BoxView Background="#707070" WidthRequest="1" Grid.Column="1" Grid.RowSpan="5" HorizontalOptions="Start" VerticalOptions="StartAndExpand"/>
+                                                 <!-- Rate A-->
+                                                        <Label Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"  Text="Rate A" Style="{StaticResource styLabel_Small}" TextColor="#320941" VerticalOptions="Center" HorizontalOptions="CenterAndExpand"/>
+                                                        <Label Grid.Row="1" Grid.Column="1"  Text="Max.Date" Style="{StaticResource styLabel_Small}" TextColor="#320941" VerticalOptions="Center" HorizontalOptions="CenterAndExpand"/>
+                                                 <!--<BoxView Background="#707070" WidthRequest="1" Grid.Column="1"  HorizontalOptions="Center" VerticalOptions="FillAndExpand"/>-->
+
+                                                        <Label Grid.Row="1" Grid.Column="2"  Text="Max.Value" Style="{StaticResource styLabel_Small}" TextColor="#320941" VerticalOptions="Center" HorizontalOptions="CenterAndExpand"/>
+                                                 <BoxView Background="#707070" WidthRequest="1" Grid.Row="1" Grid.Column="2" HorizontalOptions="Start" VerticalOptions="FillAndExpand"/>
+
+                                                 <BoxView Background="#707070" WidthRequest="1" Grid.Column="2"   HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+                                               
+                                                 <!-- Rate B-->
+
+
+                                                        <Label Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="2" Text="Rate B" Style="{StaticResource styLabel_Small}" TextColor="#320941" VerticalOptions="Center" HorizontalOptions="CenterAndExpand"/>
+                                                        <Label Grid.Row="1" Grid.Column="3" Text="Max.Date" Style="{StaticResource styLabel_Small}" TextColor="#320941" VerticalOptions="Center" HorizontalOptions="CenterAndExpand"/>
+                                                        <Label Grid.Row="1" Grid.Column="4" Text="Max.Value" Style="{StaticResource styLabel_Small}" TextColor="#320941" VerticalOptions="Center" HorizontalOptions="CenterAndExpand"/>
+                                                 <BoxView Background="#707070" WidthRequest="1" Grid.Row="1" Grid.Column="4" HorizontalOptions="Start" VerticalOptions="FillAndExpand"/>
+
+                                                        <BoxView Background="#707070" WidthRequest="1" Grid.Column="4"  HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+
+
+                                                 <!-- Rate C-->
+                                                        <Label Grid.Row="0" Grid.Column="5" Grid.ColumnSpan="2" Text="Rate C"  Style="{StaticResource styLabel_Small}" TextColor="#320941" VerticalOptions="Center" HorizontalOptions="CenterAndExpand"/>
+                                                        <Label Grid.Row="1" Grid.Column="5" Text="Max.Date" Style="{StaticResource styLabel_Small}" TextColor="#320941" VerticalOptions="Center" HorizontalOptions="CenterAndExpand"/>
+                                                        <Label Grid.Row="1" Grid.Column="6" Text="Max.Value" Style="{StaticResource styLabel_Small}" TextColor="#320941" VerticalOptions="Center" HorizontalOptions="CenterAndExpand"/>
+                                                 <BoxView Background="#707070" WidthRequest="1" Grid.Row="1" Grid.Column="6" HorizontalOptions="Start" VerticalOptions="FillAndExpand"/>
+
+                                                        <!--<BoxView Background="#707070" WidthRequest="1" Grid.Column="6"  HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>-->
+
+
+                                                        
+                                                       
+                                                        <!--<BoxView Background="#707070" WidthRequest="1" Grid.Row="1" Grid.ColumnSpan="4" HorizontalOptions="StartAndExpand" VerticalOptions="End"/>-->
+                                              
+                                                
+                                            <Label Grid.Row="3" Grid.Column="0"   x:Name="Date" Text="{Binding Date}" Style="{StaticResource styLabel_Micro}" TextColor="#320941" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                            <Label Grid.Row="3" Grid.Column="1"  x:Name="MaxdateA" Text="{Binding MaxdateA}"  Style="{StaticResource styLabel_Micro}" TextColor="#320941" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                            <Label Grid.Row="3" Grid.Column="2"  x:Name="MaxvalueA" Text="{Binding MaxvalueA}"  Style="{StaticResource styLabel_Micro}" TextColor="#320941" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
+                                            <Label Grid.Row="3" Grid.Column="3"   x:Name="MaxdateB" Text="{Binding MaxdateB}"  Style="{StaticResource styLabel_Micro}" TextColor="#320941" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                            <Label Grid.Row="3" Grid.Column="4"  x:Name="MaxvalueB" Text="{Binding MaxvalueB}"  Style="{StaticResource styLabel_Micro}" TextColor="#320941" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
+                                                <Label Grid.Row="3" Grid.Column="5"   x:Name="MaxdateC" Text="{Binding MaxdateC}"  Style="{StaticResource styLabel_Micro}" TextColor="#320941" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                            <Label Grid.Row="3" Grid.Column="6"  x:Name="MaxvalueC" Text="{Binding MaxvalueC}"  Style="{StaticResource styLabel_Micro}" TextColor="#320941" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
+                                           
+
+
+
+
+                                            <!--<Label Grid.Row="0" Grid.Column="0"  Text="วันที่" Style="{StaticResource styLabel_Small}" TextColor="#320941" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" />
+                    <Label Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"  Text="Rate A" Style="{StaticResource styLabel_Small}" TextColor="#320941" VerticalOptions="Center" HorizontalOptions="CenterAndExpand"/>
+                    <Label Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" Text="Rate B" Style="{StaticResource styLabel_Small}" TextColor="#320941" VerticalOptions="Center" HorizontalOptions="CenterAndExpand"/>
+                    <Label Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="2" Text="Rate C"  Style="{StaticResource styLabel_Small}" TextColor="#320941" VerticalOptions="Center" HorizontalOptions="CenterAndExpand"/>
+                    <BoxView Background="#707070" WidthRequest="1" Grid.Column="0" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+                    <BoxView Background="#707070" WidthRequest="1" Grid.Column="1" Grid.ColumnSpan="2"  HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+                    <BoxView Background="#707070" WidthRequest="1" Grid.Column="2" Grid.ColumnSpan="2"  HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+                    <BoxView Background="#707070" WidthRequest="1" Grid.Row="1" Grid.ColumnSpan="4" HorizontalOptions="StartAndExpand" VerticalOptions="End"/>-->
+
+                                            <!--<Label Grid.Row="2" Grid.Column="0" x:Name="Date" Text="{Binding Date}" Style="{StaticResource styLabel_Micro}" TextColor="#320941" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                            <Label Grid.Row="2" Grid.Column="1" x:Name="MaxdateA" Text="{Binding MaxdateA}"  Style="{StaticResource styLabel_Micro}" TextColor="#320941" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                            <Label Grid.Row="2" Grid.Column="2" x:Name="MaxvalueA" Text="{Binding MaxvalueA}"  Style="{StaticResource styLabel_Micro}" TextColor="#320941" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                            <Label Grid.Row="2" Grid.Column="3" x:Name="MaxdateB" Text="{Binding MaxdateB}"  Style="{StaticResource styLabel_Micro}" TextColor="#320941" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                            <Label Grid.Row="2" Grid.Column="4" x:Name="MaxvalueB" Text="{Binding MaxvalueB}"  Style="{StaticResource styLabel_Micro}" TextColor="#320941" HorizontalOptions="Center" VerticalOptions="Center"/>-->
+
+                                            <!--<BoxView Background="#707070" WidthRequest="1" Grid.Column="0" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+                                    <BoxView Background="#707070" WidthRequest="1" Grid.Column="1" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+                                    <BoxView Background="#707070" WidthRequest="1" Grid.Column="2" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+                                     <BoxView Background="#707070" WidthRequest="1" Grid.Column="3" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>-->
+
+                                        </Grid>
+                                            </ScrollView>
+                                    </Frame>
+
+                                </StackLayout>
+
+                            </DataTemplate>
+
+                        </CarouselView.ItemTemplate>
+                    </CarouselView>
+                    <IndicatorView x:Name="indicatorView" IndicatorColor="#AF6FA9" SelectedIndicatorColor="#74065F" IndicatorSize="10" >
+                    </IndicatorView>
+                </StackLayout>
+            </ContentView>
+            <ContentView Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="4" Padding="10">
+                <Button Text="ดาวน์โหลด" Style="{StaticResource styLabel_Body}" Background="#74065F" TextColor="White"/>
+
+            </ContentView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
+

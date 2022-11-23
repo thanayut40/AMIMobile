@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AMIMobile.SettingLanguagePage"
+
+    Title="ตั้งค่าภาษา"
+    NavigationPage.BackButtonTitle="">
+    <ContentPage.Content>
+        <Grid RowDefinitions="20,Auto,Auto,Auto" ColumnDefinitions="Auto,*,Auto">
+            <ContentView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Padding="10" >
+                <Frame Background="#FFF" CornerRadius="7" HasShadow="False" HeightRequest="100" >
+                    <CollectionView x:Name="SelectLanguage" SelectionMode="Single"  > 
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid RowDefinitions="Auto,Auto,Auto" ColumnDefinitions="Auto,*,Auto">
+                                 <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" HorizontalOptions="Start" Text="{Binding Language}" Style="{StaticResource styLabel_Body}" TextColor="#320941" />
+                                     <Image Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Source="ic_correct.png" x:Name="Ic_correct" IsVisible="{Binding IsSeparatorVisible}"  HeightRequest="22" Margin="0,0,15,0" HorizontalOptions="End" />
+                                <BoxView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" HorizontalOptions="FillAndExpand" HeightRequest="1" Color="#dbdbdb" VerticalOptions="End"/>
+                                </Grid>
+                             
+                            </DataTemplate>
+
+                        </CollectionView.ItemTemplate>
+
+                    </CollectionView>
+                </Frame>
+
+            </ContentView>
+           <ContentView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" Padding="10">
+                <Button  Text="ยืนยัน" Clicked="Btn_Select"  Style="{StaticResource styLabel_Body}" TextColor="White" Background="#74065F" CornerRadius="7"/>
+            </ContentView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
+

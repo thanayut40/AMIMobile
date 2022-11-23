@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AMIMobile.ChangePassPage"
+    Title="เปลี่ยนรหัสผ่าน">
+    <ContentPage.Content>
+        <Grid RowDefinitions="10,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,*,Auto">
+            <ContentView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Padding="10">
+                <StackLayout>
+                    <Frame Background="#FFF" CornerRadius="10" HasShadow="False">
+                        <StackLayout>
+                            <Label Text="แก้ไขรหัสผ่าน" Style="{StaticResource styLabel_Body}" TextColor="#74065F"/>
+                            <StackLayout Orientation="Vertical">
+                                <Frame  HeightRequest="48" Background="#fff" CornerRadius="7" Padding="0" HasShadow="False" BorderColor="#74065F" >
+                                    <StackLayout Orientation="Horizontal">
+                                        <Entry BackgroundColor="Transparent" PlaceholderColor="#707070" Placeholder="กรอกรหัสผ่านใหม่" Style="{StaticResource styLabel_Small}"  TextColor="#320941" HorizontalOptions="FillAndExpand"  />
+                                        <Image Source="ic_hidden.png"  HeightRequest="22"  Margin="0,0,15,0"/>
+                                    </StackLayout>
+                                </Frame>
+                                <Label Text="หมายเหตุเปลี่ยนรหัสผ่าน" Style="{StaticResource styLabel_Small}" TextColor="#74065F" HorizontalOptions="Center"/>
+                                <Frame  HeightRequest="48" Background="#fff" CornerRadius="7" Padding="0" HasShadow="False" BorderColor="#74065F" >
+                                    <StackLayout Orientation="Horizontal">
+
+                                        <Entry BackgroundColor="Transparent" PlaceholderColor="#707070" Placeholder="ยืนยันรหัสผ่านใหม่" Style="{StaticResource styLabel_Small}"  TextColor="#320941" HorizontalOptions="FillAndExpand"  />
+                                        <Image Source="ic_hidden.png"  HeightRequest="22"  Margin="0,0,15,0"/>
+
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </ContentView>
+            <ContentView Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="4" Padding="10">
+                <Button  Text="ตกลง" Clicked="Btn_ChangePass"  Style="{StaticResource styLabel_Body}" TextColor="White" Background="#74065F" CornerRadius="7"/>
+
+            </ContentView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
+

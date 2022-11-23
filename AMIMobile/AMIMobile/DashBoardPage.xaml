@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AMIMobile.DashBoardPage"
+    NavigationPage.HasNavigationBar="True"
+    NavigationPage.HasBackButton="True"
+    Title="Dashboard"
+    xmlns:viewmodel="clr-namespace:AMIMobile.Model"
+    >
+    <ContentPage.BindingContext>
+        <viewmodel:DashboardItemsModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <Grid RowDefinitions="Auto,Auto,Auto,300,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto">
+            <ContentView Grid.Row="1" Grid.Column="0" >
+                <StackLayout VerticalOptions="Center" Padding="5,0,0,0" >
+                    <Label Text="หมายเลขมิเตอร์:" Style="{StaticResource styLabel_Body}" TextColor="#320941" VerticalOptions="Center" HorizontalOptions="Center" />
+                </StackLayout>
+            </ContentView>
+            <ContentView  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4"  >
+                <StackLayout HorizontalOptions="Center">
+                    <Frame  Background="Transparent" HeightRequest="41"  BorderColor="#74065F" CornerRadius="7" HasShadow="False" Padding="0,0,0,0" Margin="0,5,0,5">
+                        <Picker  Title="เลือกหมายเลขมิเตอร์" TitleColor="#320941" Style="{StaticResource styLabel_Small}" HorizontalOptions="Center"  />
+                    </Frame>
+                </StackLayout>
+            </ContentView>
+            <!--<ContentView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4">
+                <StackLayout>
+                <Button Text="คลิก" Clicked="Button_Clicked222" />
+                </StackLayout>
+            </ContentView>-->
+            <ContentView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" >
+                <Label x:Name="billmonth" Text="{Binding billMonth}"  Style="{StaticResource styLabel_Body}" TextColor="#320941" Padding="25,0,0,0"  />
+            </ContentView>
+            <ContentView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" >
+                <StackLayout Padding="0,10,0,0">
+                    <Image Source="img_title_2.png" VerticalOptions="Start" HorizontalOptions="Start" WidthRequest="200" Margin="8,0,0,0" />
+                </StackLayout>
+            </ContentView>
+            <ContentView Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="4" Padding="5">
+                <StackLayout>
+                    <CarouselView  x:Name="Collection_BillingMonth" HorizontalScrollBarVisibility="Never" HorizontalOptions="Center" IndicatorView="indicatorView_3" Loop="False" >
+                        <CarouselView.ItemsLayout>
+                            <LinearItemsLayout Orientation="Horizontal" ItemSpacing="20"  />
+                        </CarouselView.ItemsLayout>
+                        <CarouselView.ItemTemplate>
+                            <DataTemplate>
+                                <Frame Background="#E7D2EF" CornerRadius="14" HasShadow="False" >
+                                    <Grid RowDefinitions="Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto" ColumnSpacing="2">
+                                        <StackLayout Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" >
+                                            <Label Text="{Binding lpfDate} " Style="{StaticResource styLabel_Small}" TextColor="#320941" VerticalOptions="Center" HorizontalOptions="Start"/>
+                                            <!--<Label Text="วันที่ 21/07/2565 00.15 - 15/08/2565 16.00 " Style="{StaticResource styLabel_Small}" TextColor="#320941" VerticalOptions="Center" HorizontalOptions="Start"/>-->
+
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="0" Grid.Column="0"  >
+                                            <ImageButton  Clicked="Btn_Refresh" Background="Transparent" Source="ic_refresh.png" WidthRequest="15" VerticalOptions="Center" HorizontalOptions="End"/>
+
+                                        </StackLayout>
+                                        <StackLayout  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4"  >
+                                            
+                                            <Frame Background="#FFF" CornerRadius="13" BorderColor="#630E91" HasShadow="False" >
+                                                <StackLayout Orientation="Vertical" Spacing="0">
+                                                    <StackLayout HorizontalOptions="Start" VerticalOptions="Start">
+                                                        <Label Text="{Binding LpfBillBoard.KwhName}" Style="{StaticResource styLabel_Small}" TextColor="#320941" />
+                                                    </StackLayout>
+                                                    <StackLayout HorizontalOptions="Center">
+                                                        <Label Text="{Binding LpfBillBoard.Kwh}" Style="{StaticResource styLabel_Bold}" TextColor="#339123"/>
+                                                    </StackLayout>
+                                                </StackLayout>
+                                            </Frame>
+                                        </StackLayout>
+                                        <StackLayout  Grid.Row="1" Grid.Column="4"  >
+                                            <Frame Background="#FFF" CornerRadius="13" BorderColor="#630E91" HasShadow="False">
+                                                <StackLayout Orientation="Vertical" Spacing="0">
+                                                    <StackLayout HorizontalOptions="Start" VerticalOptions="Start">
+                                                        <Label Text="{Binding LpfBillBoard.KvarhName}" Style="{StaticResource styLabel_Small}" TextColor="#320941"/>
+                                                    </StackLayout>
+                                                    <StackLayout HorizontalOptions="Center">
+                                                        <Label Text="{Binding LpfBillBoard.Kvarh}" Style="{StaticResource styLabel_Bold}" TextColor="#00809A"/>
+                                                    </StackLayout>
+                                                </StackLayout>
+                                            </Frame>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4"  >
+                                            <Frame CornerRadius="13" BorderColor="#630E91" HasShadow="False" >
+                                                <StackLayout Orientation="Vertical" Spacing="0">
+                                                    <StackLayout HorizontalOptions="StartAndExpand" VerticalOptions="Start" >
+                                                        <Label Text="{Binding LpfBillBoard.KwName}" Style="{StaticResource styLabel_Small}"/>
+                                                    </StackLayout>
+                                                    <StackLayout HorizontalOptions="Center">
+                                                        <Label Text="{Binding LpfBillBoard.Kw}"  Style="{StaticResource styLabel_Bold}" TextColor="#C8043D"/>
+                                                    </StackLayout>
+                                                    <StackLayout HorizontalOptions="Center">
+                                                        <Label Text="{Binding LpfBillBoard.KwDate}" Style="{StaticResource styLabel_Micro}" TextColor="#320941" VerticalOptions="End"/>
+                                                    </StackLayout>
+                                                </StackLayout>
+                                            </Frame>
+                                        </StackLayout>
+                                        <StackLayout  Grid.Row="2" Grid.Column="4" >
+                                            <Frame CornerRadius="13" BorderColor="#630E91" HasShadow="False">
+                                                <StackLayout Orientation="Vertical" Spacing="0">
+                                                    <StackLayout HorizontalOptions="Start" VerticalOptions="Start">
+                                                        <Label Text="{Binding LpfBillBoard.KvarName}" Style="{StaticResource styLabel_Small}"/>
+                                                    </StackLayout>
+                                                    <StackLayout HorizontalOptions="Center">
+                                                        <Label Text="{Binding LpfBillBoard.Kvar}" Style="{StaticResource styLabel_Bold}" TextColor="#ED882B"/>
+                                                    </StackLayout>
+                                                    <StackLayout HorizontalOptions="Center">
+                                                        <Label Text="{Binding LpfBillBoard.KvarDate}" Style="{StaticResource styLabel_Micro}" TextColor="#320941" VerticalOptions="End"/>
+                                                    </StackLayout>
+                                                </StackLayout>
+                                            </Frame>
+                                        </StackLayout>
+                                    </Grid>
+
+                                </Frame>
+                            </DataTemplate>
+
+                        </CarouselView.ItemTemplate>
+                    </CarouselView>
+                    <IndicatorView x:Name="indicatorView_3" IndicatorColor="#AF6FA9" SelectedIndicatorColor="#74065F" IndicatorSize="6" >
+                    </IndicatorView>
+                </StackLayout>
+            </ContentView>
+            <ContentView Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="4" >
+                <Label Text="{Binding ChartName}" Style="{StaticResource styLabel_Body}" TextColor="#320941" Padding="25,0,0,0"   />
+            </ContentView>
+            <ContentView Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="4"  >
+                <StackLayout Padding="0,15,0,0">
+                    <Image Source="img_title_2.png" VerticalOptions="Start" HorizontalOptions="Start" WidthRequest="150" Margin="8,0,0,0" />
+                </StackLayout>
+            </ContentView>
+            <BoxView Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="4" Background="#E7D2EF" Grid.RowSpan="3" VerticalOptions="FillAndExpand"  HeightRequest="260" CornerRadius="40,40,0,0" />
+            <!--<Grid x:Name="innerGrid" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2" Padding="15">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid x:Name="controlsGrid" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"  >
+                    <Frame  Background="#fff" CornerRadius="17" HasShadow="False" Padding="0">
+                        <Image Source="img_loadprofile.png" Aspect="AspectFit"/>
+                    </Frame>
+                </Grid>
+            </Grid>-->
+            <ContentView Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2" Padding="15" >
+                 <StackLayout x:Name="outerStack"  >
+                      <Frame  Background="#fff" CornerRadius="17" HasShadow="False" Padding="0">
+                        <!--<Image Source="img_loadprofile.png" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+                            
+                        </Image>-->
+                    </Frame>
+                </StackLayout>
+
+            </ContentView>
+            <BoxView Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="4" Background="#E7D2EF"  HeightRequest="260" CornerRadius="40,40,0,0" Margin="0,10,0,0"/>
+        </Grid>
+    </ContentPage.Content>
+    <!--<RefreshView x:Name="myRefreshView" Refreshing="RefreshView_Refreshing" RefreshColor="#74065F">
+          </RefreshView>-->
+</ContentPage>
+

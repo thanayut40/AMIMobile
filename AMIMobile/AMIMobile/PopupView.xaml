@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<pages:PopupPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AMIMobile.PopupView"
+    xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+    xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup">
+    <pages:PopupPage.Animation>
+        <animations:ScaleAnimation PositionIn="Center" PositionOut="Center" ScaleIn="0.8" ScaleOut="0.8" DurationIn="700" DurationOut="300" EasingIn="SinOut"
+          EasingOut="SinIn"/>
+    </pages:PopupPage.Animation>
+    <ContentPage.Content>
+        <ContentView Padding="25,25,25,100" VerticalOptions="Center" HorizontalOptions="Center">
+            <Frame Background="#fff" CornerRadius="18"  >
+                <StackLayout>
+                    <Grid RowDefinitions="10,400">
+                        <ContentView  Grid.Row="1">
+                            <StackLayout>
+                                <CarouselView x:Name="Collection_ADS" HorizontalScrollBarVisibility="Never" HorizontalOptions="Center" IndicatorView="indicatorView_2" Loop="False"  >
+                                    <CarouselView.ItemsLayout>
+                                        <LinearItemsLayout Orientation="Horizontal" ItemSpacing="20"  />
+                                    </CarouselView.ItemsLayout>
+                                    <CarouselView.ItemTemplate  >
+                                        <DataTemplate >
+                                            <Frame  Background="Transparent"  CornerRadius="9" Padding="0"  HasShadow="False">
+                                                <Image Source="{Binding Img}" Aspect="Fill" />
+                                            </Frame>
+                                        </DataTemplate>
+                                    </CarouselView.ItemTemplate>
+                                </CarouselView>
+                                <IndicatorView x:Name="indicatorView_2" IndicatorColor="#AF6FA9" SelectedIndicatorColor="#74065F" IndicatorSize="5" />
+                            </StackLayout>
+                        </ContentView>
+                    </Grid>
+                    <StackLayout Orientation="Horizontal"  >
+                        <CheckBox x:Name="checkBox_2" Color="#74065F" VerticalOptions="Center"/>
+                        <Label Text="ไม่ต้องแสดงอีกใน 14 วัน" Style="{StaticResource styLabel_Small}" TextColor="#320941" VerticalOptions="Center"/>
+                    </StackLayout>
+                    <ContentView Padding="100,0,100,0">
+                        <Button  Clicked="Btn_Close" Text="ปิด" CornerRadius="10"  TextColor="White" Background="#74065F" Style="{StaticResource styLabel_Body}"/>
+                    </ContentView>
+                </StackLayout>
+            </Frame>
+        </ContentView>
+    </ContentPage.Content>
+</pages:PopupPage>
+

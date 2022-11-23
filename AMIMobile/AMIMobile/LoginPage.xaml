@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AMIMobile.LoginPage"
+    NavigationPage.HasNavigationBar="False"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    >
+    <ContentPage.Content>
+        <Grid RowDefinitions="Auto,*,Auto,*" ColumnDefinitions="Auto,*,Auto">
+
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0,1">
+                    <GradientStop Color="#FEE9FA"
+                          Offset="0.1" />
+                    <GradientStop Color="#74065F"
+                          Offset="1.0" />
+                </LinearGradientBrush>
+            </Grid.Background>
+            <ContentView Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="3">
+
+                <StackLayout VerticalOptions="Start" HorizontalOptions="End">
+                    <Image Source="line_1.png" WidthRequest="300" VerticalOptions="Start" HorizontalOptions="End"/>
+                </StackLayout>
+            </ContentView>
+            <ContentView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" VerticalOptions="End">
+                <Image Source="AMI_logo.png" HorizontalOptions="Center" HeightRequest="150" />
+                <!--<BoxView Background="black"/>-->
+            </ContentView>
+            <ContentView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Padding="20,0,20,20"  VerticalOptions="Start" >
+                <Frame Background="#fff" HasShadow="False" >
+                    <StackLayout>
+                        <Label Text="SingIn" Style="{StaticResource styLabel_SubTitle}" TextColor="#320941" HorizontalOptions="Center"/>
+                        <StackLayout>
+                            <Label Text="ชื่อผู้ใช้" Style="{StaticResource styLabel_Body}" TextColor="#320941"/>
+                            <Frame Background="#C18FB7" HeightRequest="48" HasShadow="False" CornerRadius="7" Padding="0" >
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Source="ic_user_2.png" HeightRequest="25" Margin="15,0,0,0"/>
+                                    <Entry BackgroundColor="Transparent" x:Name="inputUsername"  PlaceholderColor="White" Placeholder="กรอกชื่อผู้ใช้งาน" Style="{StaticResource styLabel_Body}"  TextColor="White" HorizontalOptions="FillAndExpand"/>
+                                </StackLayout>
+                            </Frame>
+                            <Label Text="รหัสผ่าน" Style="{StaticResource styLabel_Body}" TextColor="#320941"/>
+                            <Frame Background="#C18FB7" HeightRequest="48" HasShadow="False" CornerRadius="7" Padding="0" >
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Source="icons/ic_padlock.png" HeightRequest="25" Margin="15,0,0,0"/>
+                                    <Entry BackgroundColor="Transparent" x:Name="inputPassword" PlaceholderColor="White" Placeholder="กรอกรหัสผ่าน" Style="{StaticResource styLabel_Body}" IsPassword="True"  TextColor="White" HorizontalOptions="FillAndExpand"  />
+                                    <Image Source="ic_eye_hide.png"  x:Name="Ic_Password" HeightRequest="22"  Margin="0,0,15,0">
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="PasswordIcon_Clicked" NumberOfTapsRequired="1" >
+                                            </TapGestureRecognizer>
+                                        </Image.GestureRecognizers>
+                                    </Image>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal"  >
+                            <CheckBox   Color="#74065F" VerticalOptions="Center"/>
+                            <Label Text="จดจำผู้ใช้งาน" Style="{StaticResource styLabel_Body}" TextColor="#320941" VerticalOptions="Center"/>
+                            <Label Text="ลืมรหัสผ่าน" Style="{StaticResource styLabel_Body}" TextColor="#320941" VerticalOptions="Center" HorizontalOptions="EndAndExpand" TextDecorations="Underline">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="ForgotPass_Click" NumberOfTapsRequired="1"/>
+                                </Label.GestureRecognizers>
+                            </Label>
+                        </StackLayout>
+                        <StackLayout Padding="0,10,0,0">
+                            <Button Text="ลงชื่อเข้าใช้"  Style="{StaticResource styLabel_Body}"  Clicked="Btn_Clicked_Login" TextColor="#fff"  Background="#74065F" HorizontalOptions="FillAndExpand" CornerRadius="7"/>
+
+
+
+                            <!--<StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="0,10,0,0">
+                            <Label Text="ไทย" Style="{StaticResource styLabel_Body}" TextColor="#320941" VerticalOptions="Center" Padding="0,0,20,0"/>
+                           
+                                <BoxView VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="10" WidthRequest="1" Color="#320941"/>
+                            <Label Text="Eng" Style="{StaticResource styLabel_Body}" TextColor="#320941" VerticalOptions="Center" HorizontalOptions="End" Padding="20,0,0,0"/>
+                           
+                           
+                        </StackLayout>-->
+
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="0,10,0,0">
+                                <Button Text="ไทย" Style="{StaticResource styLabel_Body}" WidthRequest="100" x:Name="Btn_Thai"  Clicked="Btn_Cilck_Thai" TextColor="#FFF" Background="#74065F" VerticalOptions="Center" />
+                                <Button Text="En" Style="{StaticResource styLabel_Body}" WidthRequest="100" x:Name="Btn_Eng" Clicked="Btn_Cilck_Eng" TextColor="#320941" Background="#FFF"  VerticalOptions="Center" HorizontalOptions="End"  />
+                            </StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </ContentView>
+            <!--<ContentView Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3">
+
+                <StackLayout VerticalOptions="End" >
+                     <Image Source="img/line_2.png"  VerticalOptions="End" HorizontalOptions="Start" />
+
+                </StackLayout>
+            </ContentView>-->
+            <!--<ListView x:Name="Listlogin">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Detail="{Binding userid}">
+
+
+                        </TextCell>
+
+                    </DataTemplate>
+
+                </ListView.ItemTemplate>
+
+            </ListView>-->
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
+

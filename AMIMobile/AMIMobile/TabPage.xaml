@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<TabbedPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:AMIMobile"
+    x:Class="AMIMobile.TabPage"
+    BarBackground="#74065F"
+    UnselectedTabColor="#fff"
+    SelectedTabColor="#E7D2EF"
+    xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    android:TabbedPage.ToolbarPlacement="Bottom"
+    ios:TabbedPage.TranslucencyMode="Opaque"
+    NavigationPage.HasBackButton="False"
+    NavigationPage.HasNavigationBar="True"
+    BarTextColor="White"
+    >
+    <NavigationPage.TitleView>
+        <StackLayout Padding="0" >
+            <StackLayout >
+                <Image Source="img_b01.png"  WidthRequest="70" VerticalOptions="Start" HorizontalOptions="End" />
+            </StackLayout>
+            <Image  Source="img_b02.png" WidthRequest="100" VerticalOptions="End" HorizontalOptions="Start" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <local:DashBoardPage Icon="ic_graph.png" Title="Dashboard" />
+    <local:AccountPage Icon="ic_user.png" Title="เมนูบัญชีผู้ใช้ไฟฟ้า" />
+    <local:LoadProfilePage Icon="ic_thunder.png" Title="โหลดโปรไฟล์" />
+    <local:BillingPage Icon="ic_invoice.png"  Title="ใบอ่านหน่วย"/>
+    <local:SettingPage Icon="ic_settings.png"  Title="ตั้งค่า"/>
+</TabbedPage>
+
+<!--<NavigationPage Icon="icons/ic_thunder.png" Title="โหลดโปรไฟล์"   >
+        <x:Arguments>
+            <local:LoadProfilePage/>
+        </x:Arguments>
+    </NavigationPage>-->

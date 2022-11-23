@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>AMIMobile</id>
+    <version>1.0.0</version>
+    <authors>AMIMobile</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Microsoft.AppCenter" version="4.5.3" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.1" exclude="Build,Analyzers" />
+        <dependency id="Plugin.Fingerprint" version="2.1.5" exclude="Build,Analyzers" />
+        <dependency id="Plugin.Multilingual" version="1.0.2" exclude="Build,Analyzers" />
+        <dependency id="Rg.Plugins.Popup" version="2.1.0" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.Essentials" version="1.7.3" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.Forms" version="5.0.0.2515" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="/Users/macintoshhd/Desktop/App_การไฟฟ้า/Project/AMIMobile/AMIMobile/AMIMobile/bin/Release/netstandard2.0/en/AMIMobile.resources.dll" target="lib/netstandard2.0/en/AMIMobile.resources.dll" />
+    <file src="/Users/macintoshhd/Desktop/App_การไฟฟ้า/Project/AMIMobile/AMIMobile/AMIMobile/bin/Release/netstandard2.0/th/AMIMobile.resources.dll" target="lib/netstandard2.0/th/AMIMobile.resources.dll" />
+    <file src="/Users/macintoshhd/Desktop/App_การไฟฟ้า/Project/AMIMobile/AMIMobile/AMIMobile/bin/Release/netstandard2.0/AMIMobile.dll" target="lib/netstandard2.0/AMIMobile.dll" />
+  </files>
+</package>

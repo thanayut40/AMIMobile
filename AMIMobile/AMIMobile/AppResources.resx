@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="เข้าสู่ระบบ" xml:space="preserve">
+        <value>เข้าสู่ระบบ</value>
+    </data>
+	<data name="ชื่อผู้ใช้" xml:space="preserve">
+        <value>ชื่อผู้ใช้</value>
+    </data>
+	<data name="รหัสผ่าน" xml:space="preserve">
+        <value>รหัสผ่าน</value>
+    </data>
+	<data name="กรอกชื่อผู้ใช้งาน" xml:space="preserve">
+        <value>กรอกชื่อผู้ใช้งาน</value>
+    </data>
+	<data name="กรอกรหัสผ่าน" xml:space="preserve">
+        <value>กรอกรหัสผ่าน</value>
+    </data>
+	<data name="จดจำผู้ใช้งาน" xml:space="preserve">
+        <value>จดจำผู้ใช้งาน</value>
+    </data>
+	<data name="ลืมรหัสผ่าน" xml:space="preserve">
+        <value>ลืมรหัสผ่าน</value>
+    </data>
+	<data name="รายละเอียดลืมรหัสผ่าน" xml:space="preserve">
+        <value>กรุณากรอกชื่อผู้ใช้ และอีเมล์เพื่อตั้งค่ารหัสผ่านใหม่</value>
+    </data>
+	<data name="กรอกอีเมล์" xml:space="preserve">
+        <value>กรอกอีเมล์</value>
+    </data>
+	<data name="ส่ง" xml:space="preserve">
+        <value>ส่ง</value>
+    </data>
+	<data name="ลงชื่อเข้าใช้" xml:space="preserve">
+        <value>ลงชื่อเข้าใช้</value>
+    </data>
+	<data name="ไทย" xml:space="preserve">
+        <value>ไทย</value>
+    </data>
+	<data name="En" xml:space="preserve">
+        <value>En</value>
+    </data>
+	<!--<data name="Dashbord" xml:space="preserve">
+        <value>Dashbord</value>
+    </data>-->
+	<data name="หมายเลขมิเตอร์" xml:space="preserve">
+        <value>หมายเลขมิเตอร์</value>
+    </data>
+	<data name="หมายเลขมิเตอร์:" xml:space="preserve">
+        <value>หมายเลขมิเตอร์:</value>
+    </data>
+	<data name="เลือกหมายเลขมิเตอร์" xml:space="preserve">
+        <value>เลือกหมายเลขมิเตอร์</value>
+    </data>
+	<data name="เลือกรายงาน" xml:space="preserve">
+        <value>เลือกรายงาน</value>
+    </data>
+	<data name="เลือกช่วงเวลา" xml:space="preserve">
+        <value>เลือกช่วงเวลา</value>
+    </data>
+	<data name="เลือกวันที่" xml:space="preserve">
+        <value>เลือกวันที่</value>
+    </data>
+	<data name="บัญชีผู้ใช้ไฟฟ้า" xml:space="preserve">
+        <value>บัญชีผู้ใช้ไฟฟ้า</value>
+    </data>
+	<data name="บัญชีผู้ใช้ไฟฟ้า:" xml:space="preserve">
+        <value>บัญชีผู้ใช้ไฟฟ้า:</value>
+    </data>
+	<data name="ค่ากิโลวัตต์ชั่วโมง" xml:space="preserve">
+        <value>ค่ากิโลวัตต์ชั่วโมง</value>
+    </data>
+	<data name="ค่ากิโลวาร์ชั่วโมง" xml:space="preserve">
+        <value>ค่ากิโลวาร์ชั่วโมง</value>
+    </data>
+	<data name="ค่ากิโลวัตต์สูงสุด" xml:space="preserve">
+        <value>ค่ากิโลวัตต์สูงสุด</value>
+    </data>
+	<data name="ค่ากิโลวาร์สูงสุด" xml:space="preserve">
+        <value>ค่ากิโลวาร์สูงสุด</value>
+    </data>
+	<data name="ค่าหน่วยสะสม" xml:space="preserve">
+        <value>ค่าหน่วยสะสม</value>
+    </data>
+	<data name="โหลดโปรไฟล์" xml:space="preserve">
+        <value>โหลดโปรไฟล์</value>
+    </data>
+	<data name="รายงาน:" xml:space="preserve">
+        <value>รายงาน:</value>
+    </data>
+	<data name="ช่วงเวลา" xml:space="preserve">
+        <value>ช่วงเวลา</value>
+    </data>
+	<data name="วันที่" xml:space="preserve">
+        <value>วันที่</value>
+    </data>
+	<data name="ค้นหา" xml:space="preserve">
+        <value>ค้นหา</value>
+    </data>
+	<data name="ใบอ่านหน่วย" xml:space="preserve">
+        <value>ใบอ่านหน่วย</value>
+    </data>
+	<data name="ดาวน์โหลด" xml:space="preserve">
+        <value>ดาวน์โหลด</value>
+    </data>
+	<data name="ผู้ใช้งาน" xml:space="preserve">
+        <value>ผู้ใช้งาน</value>
+    </data>
+	<data name="อีเมล์" xml:space="preserve">
+        <value>อีเมล์</value>
+    </data>
+	<data name="เบอร์โทรศัพท์" xml:space="preserve">
+        <value>เบอร์โทรศัพท์</value>
+    </data>
+	<data name="ตั้งค่าภาษา" xml:space="preserve">
+        <value>ตั้งค่าภาษา</value>
+    </data>
+	<data name="ภาษาไทย" xml:space="preserve">
+        <value>ภาษาไทย</value>
+    </data>
+	<data name="ภาษาอังกฤษ" xml:space="preserve">
+        <value>ภาษาอังกฤษ</value>
+    </data>
+	<data name="ยืนยัน" xml:space="preserve">
+        <value>ยืนยัน</value>
+    </data>
+	<data name="การจัดการความปลอดภัย" xml:space="preserve">
+        <value>การจัดการความปลอดภัย</value>
+    </data>
+	<data name="เปลี่ยนรหัสผ่าน" xml:space="preserve">
+        <value>เปลี่ยนรหัสผ่าน</value>
+    </data>
+	<data name="ตรวจสอบรหัสผ่าน" xml:space="preserve">
+        <value>ตรวจสอบรหัสผ่าน</value>
+    </data>
+	<data name="รายละเอียดตรวจสอบรหัสผ่าน" xml:space="preserve">
+        <value>เพื่อรักษาความปลอดภัยบัญชีของคุณ กรุณายืนยันตัวตนโดยการใส่รหัสผ่าน</value>
+    </data>
+	<data name="รหัสผ่านปัจจุบัน" xml:space="preserve">
+        <value>รหัสผ่านปัจจุบัน</value>
+    </data>
+	<data name="ดำเนินการต่อ" xml:space="preserve">
+        <value>ดำเนินการต่อ</value>
+    </data>
+	<data name="แก้ไขรหัสผ่าน" xml:space="preserve">
+        <value>แก้ไขรหัสผ่าน</value>
+    </data>
+	<data name="หมายเหตุเปลี่ยนรหัสผ่าน" xml:space="preserve">
+        <value>อย่างน้อย 8 ตัวอักษรประกอบไปด้วยอักษรตัวเล็ก ตัวใหญ่ตัวเลข และอักขระพิเศษ</value>
+    </data>
+	<data name="กรอกรหัสผ่านใหม่" xml:space="preserve">
+        <value>กรอกรหัสผ่านใหม่</value>
+    </data>
+	<data name="ยืนยันรหัสผ่านใหม่" xml:space="preserve">
+        <value>ยืนยันรหัสผ่านใหม่</value>
+    </data>
+	<data name="การสแกนใบหน้า" xml:space="preserve">
+        <value>การสแกนใบหน้า</value>
+    </data>
+	<data name="บันทึกการเข้าใช้งาน" xml:space="preserve">
+        <value>บันทึกการเข้าใช้งาน</value>
+    </data>
+	<data name="เกี่ยวกับ" xml:space="preserve">
+        <value>เกี่ยวกับ</value>
+    </data>
+	<data name="ออกจากระบบ" xml:space="preserve">
+        <value>ออกจากระบบ</value>
+    </data>
+	<data name="ตั้งค่า" xml:space="preserve">
+        <value>ตั้งค่า</value>
+    </data>
+	<data name="เมนูบัญชีผู้ใช้ไฟฟ้า" xml:space="preserve">
+        <value>บัญชีผู้ใช้</value>
+    </data>
+	<data name="รอบบิล" xml:space="preserve">
+        <value>รอบบิล : สิงหาคม 2565</value>
+    </data>
+	<data name="ตกลง" xml:space="preserve">
+        <value>ตกลง</value>
+    </data>
+	<data name="รายละเอียดเปลี่ยนรหัสผ่าน" xml:space="preserve">
+        <value>เพื่อรักษาความปลอดภัยของบัญชีของคุณ กรุณายืนยันตัวตนโดยการใส่รหัสผ่าน</value>
+    </data>
+</root>

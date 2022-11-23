@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<xct:Popup   xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             Size="500,500"
+    x:Class="AMIMobile.MyPopupPage">
+    
+        <ContentView Padding="25">
+            <Frame Background="#fff" CornerRadius="18"  >
+                <StackLayout>
+                    <Grid RowDefinitions="400">
+                        <ContentView  Grid.Row="0">
+                            <StackLayout>
+                                <CarouselView x:Name="Collection_ADS2" HorizontalScrollBarVisibility="Never" HorizontalOptions="Center" IndicatorView="indicatorView_3" Loop="False"  >
+
+                                    <CarouselView.ItemsLayout>
+                                        <LinearItemsLayout Orientation="Horizontal" ItemSpacing="20"  />
+                                    </CarouselView.ItemsLayout>
+                                    <CarouselView.ItemTemplate  >
+                                        <DataTemplate >
+                                            <Frame  Background="Transparent"  CornerRadius="9"  HasShadow="False">
+                                                <Image Source="{Binding Img}" Aspect="Fill" />
+                                            </Frame>
+                                        </DataTemplate>
+
+                                    </CarouselView.ItemTemplate>
+                                </CarouselView>
+                                <IndicatorView x:Name="indicatorView_3" IndicatorColor="#AF6FA9" SelectedIndicatorColor="#74065F" IndicatorSize="5" />
+                            </StackLayout>
+                        </ContentView>
+                    </Grid>
+
+                    <StackLayout Orientation="Horizontal"  >
+                        <CheckBox x:Name="checkBox_2" Color="#74065F" VerticalOptions="Center"/>
+                        <Label Text="ไม่ต้องแสดงอีกใน 14 วัน" Style="{StaticResource styLabel_Small}" TextColor="#320941" VerticalOptions="Center"/>
+                    </StackLayout>
+                    <ContentView Padding="50,0,50,0">
+
+                        <Button  Clicked="Btn_Close2" Text="ปิด" CornerRadius="10"  TextColor="White" Background="#74065F" Style="{StaticResource styLabel_Body}"/>
+
+                    </ContentView>
+
+
+
+
+                </StackLayout>
+
+
+            </Frame>
+
+        </ContentView>
+
+   
+
+</xct:Popup>
+

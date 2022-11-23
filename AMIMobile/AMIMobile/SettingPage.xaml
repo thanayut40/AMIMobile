@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    NavigationPage.HasNavigationBar="True"
+    x:Class="AMIMobile.SettingPage">
+   <ContentPage.Content>
+
+        <Grid RowDefinitions="30,Auto,70,Auto" ColumnDefinitions="Auto,*,Auto">
+            <!--<BoxView Background="#707070" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"/>-->
+            <ContentView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Padding="10">
+                <Frame Background="#fff" CornerRadius="10" HasShadow="False" >
+                    <StackLayout>
+                        <!--<CollectionView x:Name="List_Settings"   SelectionMode="Single"   SelectionChanged="Setting_ItemTapped" >
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+
+                                    <StackLayout VerticalOptions="Center">
+                                        <StackLayout Orientation="Horizontal" Padding="0,10,10,0">
+
+                                            <Image Source="{Binding Image}" WidthRequest="25" HeightRequest="25" HorizontalOptions="Start" VerticalOptions="Center" />
+
+                                            <Label Text="{Binding Setting_Title}" Style="{StaticResource styLabel_Body}" TextColor="#320941" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Padding="10,0,0,0"/>
+                                            <Image Source="icons/ic_right_arrow.png" WidthRequest="15" HeightRequest="15" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
+                                           
+                                        </StackLayout>
+                                        
+                                        <BoxView HorizontalOptions="FillAndExpand" HeightRequest="1" Color="#dbdbdb" VerticalOptions="End"/>
+                                    </StackLayout>
+                            </DataTemplate>
+
+                        </CollectionView.ItemTemplate>
+
+                    </CollectionView>-->
+
+
+
+                        <Frame Background="transparent" CornerRadius="10" HasShadow="False" Padding="0">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Click_SettingUser"/>
+
+                            </Frame.GestureRecognizers>
+                            <StackLayout VerticalOptions="Center">
+                                <StackLayout Orientation="Horizontal" Padding="0,10,10,0">
+
+                                    <Image Source="ic_user_3.png" WidthRequest="25" HeightRequest="25" HorizontalOptions="Start" VerticalOptions="Center" />
+
+                                    <Label Text="ผู้ใช้งาน" Style="{StaticResource styLabel_Body}" TextColor="#320941" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Padding="10,0,0,0"/>
+                                    <Image Source="ic_right_arrow.png" WidthRequest="15" HeightRequest="15" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
+
+                                </StackLayout>
+
+                                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="1" Color="#dbdbdb" VerticalOptions="End"/>
+                            </StackLayout>
+                        </Frame>
+                        <Frame  Background="transparent" CornerRadius="10" HasShadow="False" Padding="0">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Click_Language"/>
+
+                            </Frame.GestureRecognizers>
+                            <StackLayout VerticalOptions="Center">
+                                <StackLayout Orientation="Horizontal" Padding="0,10,10,0">
+
+                                    <Image Source="ic_translate.png" WidthRequest="25" HeightRequest="25" HorizontalOptions="Start" VerticalOptions="Center" />
+
+                                    <Label  Text="ตั้งค่าภาษา" Style="{StaticResource styLabel_Body}" TextColor="#320941" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Padding="10,0,0,0"/>
+                                    <Image Source="ic_right_arrow.png" WidthRequest="15" HeightRequest="15" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
+
+                                </StackLayout>
+
+                                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="1" Color="#dbdbdb" VerticalOptions="End"/>
+                            </StackLayout>
+                        </Frame>
+                        <Frame  Background="transparent"  HasShadow="False" Padding="0">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Click_Security"/>
+                            </Frame.GestureRecognizers>
+                            <StackLayout VerticalOptions="Center">
+                                <StackLayout Orientation="Horizontal" Padding="0,10,10,0">
+
+                                    <Image Source="ic_fingerprint.png" WidthRequest="25" HeightRequest="25" HorizontalOptions="Start" VerticalOptions="Center" />
+
+                                    <Label Text="การจัดการความปลอดภัย" Style="{StaticResource styLabel_Body}" TextColor="#320941" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Padding="10,0,0,0"/>
+                                    <Image Source="ic_right_arrow.png" WidthRequest="15" HeightRequest="15" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
+                                </StackLayout>
+                                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="1" Color="#dbdbdb" VerticalOptions="End"/>
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame  Background="transparent"  HasShadow="False" Padding="0">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Click_Access"/>
+
+                            </Frame.GestureRecognizers>
+                            <StackLayout VerticalOptions="Center">
+                                <StackLayout Orientation="Horizontal" Padding="0,10,10,0">
+
+                                    <Image Source="ic_sync.png" WidthRequest="25" HeightRequest="25" HorizontalOptions="Start" VerticalOptions="Center" />
+
+                                    <Label Text="บันทึกการเข้าใช้งาน" Style="{StaticResource styLabel_Body}" TextColor="#320941" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Padding="10,0,0,0"/>
+                                    <Image Source="ic_right_arrow.png" WidthRequest="15" HeightRequest="15" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
+
+                                </StackLayout>
+
+                                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="1" Color="#dbdbdb" VerticalOptions="End"/>
+                            </StackLayout>
+                        </Frame>
+
+
+                        <Frame  Background="transparent"  HasShadow="False" Padding="0">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Click_About" NumberOfTapsRequired="1"/>
+
+                            </Frame.GestureRecognizers>
+                            <StackLayout VerticalOptions="Center">
+                                <StackLayout Orientation="Horizontal" Padding="0,10,10,0">
+
+                                    <Image Source="ic_warning.png" WidthRequest="25" HeightRequest="25" HorizontalOptions="Start" VerticalOptions="Center" />
+
+                                    <Label Text="เกี่ยวกับ" Style="{StaticResource styLabel_Body}" TextColor="#320941" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Padding="10,0,0,0"/>
+                                    <Image Source="ic_right_arrow.png" WidthRequest="15" HeightRequest="15" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
+
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+
+                    </StackLayout>
+
+                </Frame>
+
+            </ContentView>
+            <ContentView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" Padding="10">
+                <Frame CornerRadius="7"  Background="#74065F"  HasShadow="False"  >
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Btn_Logout" NumberOfTapsRequired="1"/>
+                    </Frame.GestureRecognizers>
+                    <StackLayout  HorizontalOptions="Center" Orientation="Horizontal" VerticalOptions="Center" Padding="0" >
+                            <Image   Source="icons/ic_logout_2.png" WidthRequest="25" HeightRequest="25" VerticalOptions="Start"   />
+                        <!--<BoxView Background="#000" />-->
+                        <Label   Text="ออกจากระบบ" Style="{StaticResource styLabel_Body}" TextColor="White"  VerticalOptions="Center" />
+                    </StackLayout>
+                     <!--<Grid RowDefinitions="Auto" ColumnDefinitions="Auto,Auto,">
+                          <Image  Source="icons/ic_logout_2.png" WidthRequest="25" HeightRequest="25" VerticalOptions="Start"   />
+                      
+                        <Label Text="{translator:Translate ออกจากระบบ}" Style="{StaticResource styLabel_Body}" TextColor="White"  VerticalOptions="Center" />
+
+                     </Grid>-->
+                         
+
+                    
+                </Frame>
+                <!--<Button  Text="{translator:Translate ออกจากระบบ}" Clicked="Btn_Logout" Style="{StaticResource styLabel_Body}" TextColor="White" Background="#74065F" CornerRadius="7"/>-->
+            </ContentView>
+
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>
+

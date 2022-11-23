@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "dgSpecHash": "naf0TfP5iNQZ2QEuazXJO3ytaLHfHYLmedUc41cXme0RmoOin639aBDjt5js8qmIiUvb9Y8iw8k1xKjFo6tCmw==",
+  "success": true,
+  "projectFilePath": "/Volumes/Backup Plus/AMIMobile/AMIMobile/AMIMobile/AMIMobile.csproj",
+  "expectedPackageFiles": [
+    "/Users/apple/.nuget/packages/microsoft.appcenter/4.5.3/microsoft.appcenter.4.5.3.nupkg.sha512",
+    "/Users/apple/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/apple/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
+    "/Users/apple/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
+    "/Users/apple/.nuget/packages/plugin.fingerprint/2.1.5/plugin.fingerprint.2.1.5.nupkg.sha512",
+    "/Users/apple/.nuget/packages/plugin.multilingual/1.0.2/plugin.multilingual.1.0.2.nupkg.sha512",
+    "/Users/apple/.nuget/packages/rg.plugins.popup/2.1.0/rg.plugins.popup.2.1.0.nupkg.sha512",
+    "/Users/apple/.nuget/packages/sqlitepclraw.bundle_green/2.1.0/sqlitepclraw.bundle_green.2.1.0.nupkg.sha512",
+    "/Users/apple/.nuget/packages/sqlitepclraw.core/2.1.0/sqlitepclraw.core.2.1.0.nupkg.sha512",
+    "/Users/apple/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.1.0/sqlitepclraw.lib.e_sqlite3.2.1.0.nupkg.sha512",
+    "/Users/apple/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.1.0/sqlitepclraw.provider.e_sqlite3.2.1.0.nupkg.sha512",
+    "/Users/apple/.nuget/packages/system.buffers/4.4.0/system.buffers.4.4.0.nupkg.sha512",
+    "/Users/apple/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
+    "/Users/apple/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/apple/.nuget/packages/system.reflection.emit.ilgeneration/4.7.0/system.reflection.emit.ilgeneration.4.7.0.nupkg.sha512",
+    "/Users/apple/.nuget/packages/system.reflection.emit.lightweight/4.7.0/system.reflection.emit.lightweight.4.7.0.nupkg.sha512",
+    "/Users/apple/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.3/system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512",
+    "/Users/apple/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "/Users/apple/.nuget/packages/xamarin.communitytoolkit/2.0.5/xamarin.communitytoolkit.2.0.5.nupkg.sha512",
+    "/Users/apple/.nuget/packages/xamarin.essentials/1.7.3/xamarin.essentials.1.7.3.nupkg.sha512",
+    "/Users/apple/.nuget/packages/xamarin.forms/5.0.0.2515/xamarin.forms.5.0.0.2515.nupkg.sha512"
+  ],
+  "logs": []
+}

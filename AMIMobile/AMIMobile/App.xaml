@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AMIMobile.App">
+    <Application.Resources>
+           <ResourceDictionary>
+        <!--Label-->
+               <Style TargetType="Label">
+                   <Setter Property="FontFamily" Value="Prompt-Regular.ttf" />
+               </Style>
+                <Style x:Key="styLabel_Bold" TargetType="Label">
+                <Setter Property="FontFamily" Value="Prompt-Bold.ttf"/>
+                <Setter Property="FontSize" Value="Subtitle"/>
+            </Style>
+         <Style x:Key="styLabel_Title" TargetType="Label">
+                <Setter Property="FontFamily" Value="Prompt-Medium.ttf"/>
+                <Setter Property="FontSize" Value="Title"/>
+            </Style>
+        <Style x:Key="styLabel_SubTitle" TargetType="Label">
+                <Setter Property="FontFamily" Value="Prompt-Regular.ttf"/>
+                <Setter Property="FontSize" Value="Subtitle"/>
+            </Style>
+            <Style x:Key="styLabel_Medium" TargetType="Label">
+                <Setter Property="FontFamily" Value="Prompt-Medium.ttf"/>
+                <Setter Property="FontSize" Value="Body"/>
+            </Style>
+        <Style x:Key="styLabel_Body" TargetType="Label">
+                <Setter Property="FontFamily" Value="Prompt-Regular.ttf"/>
+                <Setter Property="FontSize" Value="Body"/>
+            </Style>
+              
+           <Style x:Key="styLabel_Small" TargetType="Label">
+                <Setter Property="FontFamily" Value="Prompt-Regular.ttf"/>
+                <Setter Property="FontSize" Value="Small"/>
+            </Style>
+               <Style x:Key="styLabel_Micro" TargetType="Label">
+                <Setter Property="FontFamily" Value="Prompt-Regular.ttf"/>
+                <Setter Property="FontSize" Value="Micro"/>
+            </Style>
+              <Style x:Key="styLabel_Body_Title" TargetType="Label">
+                <Setter Property="FontFamily" Value="Prompt-Bold.ttf"/>
+                <Setter Property="FontSize" Value="Body"/>
+            </Style>
+           
+                <!--<Style x:Key="ColorCollection" TargetType="CollectionView">
+                <Setter Property="Background" Value="#74065F"/>
+                
+            </Style>-->
+                <!--<Style x:Key="sty_Collection" TargetType="CollectionView">
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+               
+            </Style>-->
+            <Style TargetType="NavigationPage">
+        <Setter Property="BarBackgroundColor" Value="#74065F"/>
+        <Setter Property="BarTextColor" Value="White"/>
+      </Style>
+              <!-- <Switch>-->
+               
+
+
+
+
+             </ResourceDictionary>
+    </Application.Resources>
+</Application>

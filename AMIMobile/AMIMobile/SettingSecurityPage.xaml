@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AMIMobile.SettingSecurityPage"
+    Title="การจัดการความปลอดภัย">
+    <ContentPage.Content>
+        <Grid RowDefinitions="Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,*,Auto">
+            <ContentView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Padding="10">
+                <StackLayout>
+                    <Label  Text="รหัสผ่าน" Style="{StaticResource styLabel_SubTitle}" TextColor="#74065F" HorizontalOptions="Start"/> 
+                    <Frame Background="#fff" CornerRadius="10" HasShadow="False" HeightRequest="28" Padding="10" >
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Click_ChangePass"/>
+
+                        </Frame.GestureRecognizers>
+                         <StackLayout Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Orientation="Horizontal" VerticalOptions="Center">
+                                                <Image Source="ic_lock.png" WidthRequest="25" HeightRequest="25" HorizontalOptions="Start" VerticalOptions="Center" />
+
+                                                <Label Text="เปลี่ยนรหัสผ่าน" Style="{StaticResource styLabel_Body}" TextColor="#320941" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Padding="10,0,0,0"/>
+                                                <Image Source="ic_right_arrow.png" WidthRequest="15" HeightRequest="15" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
+                                            </StackLayout>
+                        <!--<CollectionView x:Name="List_Settings_Pass" SelectionMode="Single" SelectionChanged="SetPass_ItemTapped" VerticalOptions="Center" >
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate>
+                                    <StackLayout Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Orientation="Horizontal" VerticalOptions="Center">
+                                                <Image Source="{Binding Icon}" WidthRequest="25" HeightRequest="25" HorizontalOptions="Start" VerticalOptions="Center" />
+
+                                                <Label Text="{Binding Title}" Style="{StaticResource styLabel_Body}" TextColor="#320941" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Padding="10,0,0,0"/>
+                                                <Image Source="icons/ic_right_arrow.png" WidthRequest="15" HeightRequest="15" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
+                                            </StackLayout>
+                                            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="1" Color="#dbdbdb" VerticalOptions="End"/>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>-->
+
+                    </Frame>
+                      
+                </StackLayout>
+            </ContentView>
+            <ContentView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" Padding="10">
+
+                <StackLayout>
+                    <Label  Text="การสแกนลายนิ้วมือ / ใบหน้า" Style="{StaticResource styLabel_SubTitle}" TextColor="#74065F" HorizontalOptions="Start"/>
+                    <Frame Background="#fff" CornerRadius="10" HasShadow="False" VerticalOptions="Fill" HeightRequest="90" >
+                        <CollectionView  x:Name="List_Settings_Scan" SelectionMode="None"    >
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate>
+                                        <StackLayout  VerticalOptions="Center">
+                                            <StackLayout Orientation="Horizontal" Padding="0,5,0,0">
+                                                <Image Source="{Binding Icon}" WidthRequest="25" HeightRequest="25" HorizontalOptions="Start" VerticalOptions="Center" />
+                                                <Label Text="{Binding Title}" Style="{StaticResource styLabel_Body}" TextColor="#320941" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Padding="10,0,0,0"/>
+                                                <!--<Image Source="icons/ic_right_arrow.png" WidthRequest="15" HeightRequest="15" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>-->
+                                                <Switch IsToggled="False" OnColor="#74065F" ThumbColor="#fff"/>
+                                                   
+                                                
+                                            </StackLayout>
+                                            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="1" Color="#dbdbdb" VerticalOptions="End"/>
+                                        </StackLayout>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+
+                    </Frame>
+                </StackLayout>
+            </ContentView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
+

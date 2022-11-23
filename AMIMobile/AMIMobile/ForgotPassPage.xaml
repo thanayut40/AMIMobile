@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AMIMobile.ForgotPassPage"
+    Title="ลืมรหัสผ่าน">
+    <ContentPage.Content>
+        <Grid RowDefinitions="10,Auto,Auto,Auto" ColumnDefinitions="Auto,*,Auto" >
+            <ContentView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Padding="20" >
+                <Frame Background="#FFF" HasShadow="False" CornerRadius="13" >
+                    <StackLayout>
+                        <Label Style="{StaticResource styLabel_Body}" Text="รายละเอียดลืมรหัสผ่าน" TextColor="#320941" HorizontalOptions="Center"/>
+                        <Grid RowDefinitions="Auto,Auto,Auto" ColumnDefinitions="Auto,*,Auto">
+                            <ContentView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4">
+                                <Frame  HeightRequest="48" Background="#fff" CornerRadius="7" Padding="0" HasShadow="False" BorderColor="#74065F" >
+                                    <StackLayout Orientation="Horizontal">
+                                        <Image Source="ic_user_4.png" HeightRequest="25" Margin="15,0,0,0"/>
+
+                                        <Entry BackgroundColor="Transparent" PlaceholderColor="#707070" Placeholder="กรอกชื่อผู้ใช้งาน" Style="{StaticResource styLabel_Small}"  TextColor="#320941" HorizontalOptions="FillAndExpand" />
+                                    </StackLayout>
+                                </Frame>
+
+                            </ContentView>
+                            <ContentView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" Padding="0,10,0,0">
+                                <Frame  HeightRequest="48" Background="#fff" CornerRadius="7" Padding="0" HasShadow="False" BorderColor="#74065F" >
+                                    <StackLayout Orientation="Horizontal">
+                                        <Image Source="ic_email.png" HeightRequest="25" Margin="15,0,0,0"/>
+                                        <Entry BackgroundColor="Transparent" PlaceholderColor="#707070" Placeholder="กรอกอีเมล์" Style="{StaticResource styLabel_Small}"  TextColor="#320941" HorizontalOptions="FillAndExpand"  />
+
+                                    </StackLayout>
+                                </Frame>
+                            </ContentView>
+
+                        </Grid>
+                    </StackLayout>
+                </Frame>
+
+            </ContentView>
+            <ContentView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" Padding="10">
+                <Button  Text="ส่ง"  Style="{StaticResource styLabel_Body}" TextColor="White" Background="#74065F" CornerRadius="7"/>
+            </ContentView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
+

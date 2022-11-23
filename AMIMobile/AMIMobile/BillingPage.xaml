@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    
+    x:Class="AMIMobile.BillingPage">
+    <ContentPage.Content>
+        <Grid RowDefinitions="Auto,Auto,*,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto">
+           <ContentView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" >
+                <Frame Background="transparent" HasShadow="False" Padding="0">
+                    <Grid RowDefinitions="Auto,Auto" ColumnDefinitions="Auto,*,Auto,*,Auto"  >
+                        <Label Grid.Row="0" Grid.Column="1" Text=" หมายเลขมิเตอร์:" Style="{StaticResource styLabel_Medium}" TextColor="#320941" />
+                        <Frame Grid.Row="1" Grid.Column="1" Background="Transparent" HeightRequest="45"  BorderColor="#74065F" CornerRadius="10" HasShadow="False" Padding="0,0,0,0" Margin="0,5,0,5" >
+                            <Picker  Title="เลือกหมายเลขมิเตอร์" TitleColor="#320941" Style="{StaticResource styLabel_Small}" HorizontalOptions="FillAndExpand"/>
+                        </Frame>
+                        <Label Grid.Row="0" Grid.Column="3" Text="เดือน:" Style="{StaticResource styLabel_Medium}" TextColor="#320941"/>
+                        <Frame Grid.Row="1" Grid.Column="3" Background="Transparent" HeightRequest="45" BorderColor="#74065F" CornerRadius="10" HasShadow="False" Padding="0,0,0,0" Margin="0,5,0,5">
+                            <Picker Title="เลือกเดือน" TitleColor="#320941" Style="{StaticResource styLabel_Small}" HorizontalOptions="FillAndExpand"/>
+                        </Frame>
+                    </Grid>
+                </Frame>
+            </ContentView>
+             <ContentView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="4">
+            <BoxView  Background="#E7D2EF"  CornerRadius="40,40,0,0" Margin="0,10,0,0"/>
+            </ContentView>
+             <ContentView Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="4" >
+                   <StackLayout Padding="20,20,20,0">
+                <CarouselView x:Name="Collection_Billing" HorizontalScrollBarVisibility="Never" HorizontalOptions="Center" IndicatorView="indicatorView_2" Loop="False"  >
+                      <CarouselView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Horizontal" ItemSpacing="20"  />
+                    </CarouselView.ItemsLayout>
+                    <CarouselView.ItemTemplate >
+                        <DataTemplate >
+                            <Frame  Background="#FFF" CornerRadius="31" HeightRequest="400" HasShadow="False">
+                                <Image Source="{Binding Billing}"  Aspect="Fill" />
+                            </Frame>
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
+                    <IndicatorView x:Name="indicatorView_2" IndicatorColor="#AF6FA9" SelectedIndicatorColor="#74065F" IndicatorSize="10" >
+                    </IndicatorView>
+                </StackLayout>
+            </ContentView>
+             <ContentView Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="4" Padding="10">
+                <Button Text="ดาวน์โหลด" Style="{StaticResource styLabel_Body}" Background="#74065F" TextColor="White"/>
+            </ContentView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
+

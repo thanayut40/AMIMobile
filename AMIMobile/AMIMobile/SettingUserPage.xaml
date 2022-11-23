@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AMIMobile.SettingUserPage"
+    Title="ผู้ใช้งาน"
+    NavigationPage.BackButtonTitle="">
+    <ContentPage.Content>
+     <Grid RowDefinitions="Auto,Auto,Auto" ColumnDefinitions="Auto,*,Auto">
+        <ContentView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Padding="10">
+           <StackLayout>
+                    <Label  Text="ชื่อผู้ใช้งาน" Style="{StaticResource styLabel_Body}" TextColor="#74065F" HorizontalOptions="Start"/>
+                     
+                <Frame Background="#FFF" CornerRadius="10" HeightRequest="15" HasShadow="False">
+                    <Label  Text="XxXXXXxxxx" Style="{StaticResource styLabel_Small}" TextColor="#320941" HorizontalOptions="Start"/>
+                </Frame>
+
+               </StackLayout>
+               </ContentView>
+          <ContentView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" Padding="10">
+           <StackLayout>
+                    <Label  Text="อีเมล์" Style="{StaticResource styLabel_Body}" TextColor="#74065F" HorizontalOptions="Start"/>
+                <Frame Background="#FFF" CornerRadius="10" HeightRequest="15" HasShadow="False">
+                    <Label  Text="xxxxx@gmail.com" Style="{StaticResource styLabel_Small}" TextColor="#320941" HorizontalOptions="Start" />
+
+                </Frame>
+
+               </StackLayout>
+               </ContentView>
+          <ContentView Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="4" Padding="10">
+           <StackLayout>
+                    <Label  Text="เบอร์โทรศัพท์" Style="{StaticResource styLabel_Body}" TextColor="#74065F" HorizontalOptions="Start"/>
+                     
+                <Frame Background="#FFF" CornerRadius="10" HeightRequest="15" HasShadow="False">
+                    <Label  Text="098-xxx-xxxx" Style="{StaticResource styLabel_Small}" TextColor="#320941" HorizontalOptions="Start"/>
+
+                </Frame>
+
+               </StackLayout>
+               </ContentView>
+
+     </Grid>
+    </ContentPage.Content>
+</ContentPage>
+

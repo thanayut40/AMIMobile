@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AMIMobile.LoadProfilePage"
+    Background="#E7D2EF"
+    NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <Grid RowDefinitions="20,Auto,Auto" ColumnDefinitions="Auto,*,Auto">
+            <ContentView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Padding="10">
+                <Frame Background="#FFF" HasShadow="False">
+                    <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,*,Auto,*,Auto"  >
+                        
+                        <Label Grid.Row="1" Grid.Column="1"  Text="หมายเลขมิเตอร์:" Style="{StaticResource styLabel_Medium}" TextColor="#320941" />
+                        <Frame Grid.Row="2" Grid.Column="1"    Background="Transparent" HeightRequest="45"  BorderColor="#74065F" CornerRadius="10" HasShadow="False" Padding="0,0,0,0" Margin="0,5,0,5" >
+                            <Picker Title=" เลือกหมายเลขมิเตอร์" TitleColor="#320941" Style="{StaticResource styLabel_Small}" HorizontalOptions="FillAndExpand"/>
+                        </Frame>
+                        <Label Grid.Row="1" Grid.Column="3" Text="รายงาน:" Style="{StaticResource styLabel_Medium}" TextColor="#320941"/>
+                        <Frame Grid.Row="2" Grid.Column="3"  Background="Transparent" HeightRequest="45" BorderColor="#74065F" CornerRadius="10" HasShadow="False" Padding="0,0,0,0" Margin="0,5,0,5">
+                            <Picker Title=" เลือกรายงาน" TitleColor="#320941" Style="{StaticResource styLabel_Small}" HorizontalOptions="FillAndExpand"/>
+                        </Frame>
+                        <Label Grid.Row="3" Grid.Column="1"  Text="ช่วงเวลา" Style="{StaticResource styLabel_Medium}" TextColor="#320941"/>
+                        <Frame  Grid.Row="4" Grid.Column="1"   Background="Transparent" HeightRequest="45"  BorderColor="#74065F" CornerRadius="10" HasShadow="False" Padding="0,0,0,0" Margin="0,5,0,5">
+                            <Picker Title=" เลือกช่วงเวลา" TitleColor="#320941" Style="{StaticResource styLabel_Small}" HorizontalOptions="FillAndExpand" />
+                        </Frame>
+                        <Label Grid.Row="3" Grid.Column="3"  Text="วันที่" Style="{StaticResource styLabel_Medium}" TextColor="#320941"/>
+                        <Frame Grid.Row="4" Grid.Column="3"  Background="Transparent" HeightRequest="45"  BorderColor="#74065F" CornerRadius="10" HasShadow="False" Padding="0,0,0,0" Margin="0,5,0,5">
+                            <Picker Title=" เลือกวันที่" TitleColor="#320941" Style="{StaticResource styLabel_Small}" HorizontalOptions="FillAndExpand"/>
+                        </Frame>
+                    </Grid>
+                </Frame>
+            </ContentView>
+            <ContentView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" Padding="10">
+                <Button  Text="ค้นหา" Clicked="Btn_Clicked_LoadDetail" Style="{StaticResource styLabel_Body}" TextColor="White" Background="#74065F" CornerRadius="7"/>
+            </ContentView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
+
