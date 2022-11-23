@@ -1,0 +1,163 @@
+{
+  "format": 1,
+  "restore": {
+    "/Volumes/Backup Plus/AMIMobile/AMIMobile/AMIMobile.Android/AMIMobile.Android.csproj": {}
+  },
+  "projects": {
+    "/Volumes/Backup Plus/AMIMobile/AMIMobile/AMIMobile.Android/AMIMobile.Android.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/Backup Plus/AMIMobile/AMIMobile/AMIMobile.Android/AMIMobile.Android.csproj",
+        "projectName": "AMIMobile.Android",
+        "projectPath": "/Volumes/Backup Plus/AMIMobile/AMIMobile/AMIMobile.Android/AMIMobile.Android.csproj",
+        "packagesPath": "/Users/apple/.nuget/packages/",
+        "outputPath": "/Volumes/Backup Plus/AMIMobile/AMIMobile/AMIMobile.Android/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/apple/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid12.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid12.0": {
+            "projectReferences": {
+              "/Volumes/Backup Plus/AMIMobile/AMIMobile/AMIMobile/AMIMobile.csproj": {
+                "projectPath": "/Volumes/Backup Plus/AMIMobile/AMIMobile/AMIMobile/AMIMobile.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid12.0": {
+          "dependencies": {
+            "Microsoft.AppCenter.Analytics": {
+              "target": "Package",
+              "version": "[4.5.3, )"
+            },
+            "Microsoft.AppCenter.Crashes": {
+              "target": "Package",
+              "version": "[4.5.3, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Plugin.Fingerprint": {
+              "target": "Package",
+              "version": "[2.1.5, )"
+            },
+            "Rg.Plugins.Popup": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Xamarin.CommunityToolkit": {
+              "target": "Package",
+              "version": "[2.0.5, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.3, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.2515, )"
+            }
+          }
+        }
+      }
+    },
+    "/Volumes/Backup Plus/AMIMobile/AMIMobile/AMIMobile/AMIMobile.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/Backup Plus/AMIMobile/AMIMobile/AMIMobile/AMIMobile.csproj",
+        "projectName": "AMIMobile",
+        "projectPath": "/Volumes/Backup Plus/AMIMobile/AMIMobile/AMIMobile/AMIMobile.csproj",
+        "packagesPath": "/Users/apple/.nuget/packages/",
+        "outputPath": "/Volumes/Backup Plus/AMIMobile/AMIMobile/AMIMobile/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/apple/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.AppCenter": {
+              "target": "Package",
+              "version": "[4.5.3, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Plugin.Fingerprint": {
+              "target": "Package",
+              "version": "[2.1.5, )"
+            },
+            "Plugin.Multilingual": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            },
+            "Rg.Plugins.Popup": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Xamarin.CommunityToolkit": {
+              "target": "Package",
+              "version": "[2.0.5, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.3, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.2515, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.105/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
